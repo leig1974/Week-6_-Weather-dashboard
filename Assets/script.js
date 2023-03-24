@@ -24,7 +24,7 @@
 //     }
 
 function getCoordinate(cityName) {
-        fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=3&appid=" + apiKey)
+        fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=3&appid=" + apiKey)
         .then(
             function (response) {
                 if (response.status !== 200){
